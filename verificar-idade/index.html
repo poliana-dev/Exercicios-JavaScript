@@ -7,6 +7,8 @@
     <title>Qual sua idade?</title>
 
     <link rel="stylesheet" href="css/estilo.css">
+
+    <script src="js/arquivo.js"></script>
 </head>
 <body>
     <header>
@@ -16,18 +18,18 @@
         <article>
         <p>Informe o ano que você nasceu: <input type="number" name="ano" id="anoNasc"></p>
         <p>
-            Sexo: <input type="radio" name="M" value="Masculino"> Masculino
-            <input type="radio" name="F" value="Feminino"> Feminino
+            Sexo: <input type="radio" name="radSex" value="Masculino" id="m" required checked> Masculino
+            <input type="radio" name="radSex" value="Feminino" id="f" required> Feminino
         </p>
-        <input type="button" name="verificar" value="verificar">
+        <input type="button" value="verificar" onclick="verificar()">
         </article>
-        <article id="resposta">
-            <p>Aqui carregará o resultado..</p>
+        <article id="resultado">
+            <p>Preencha para obter o resultado..</p>
     
         </article>   
     </section>
     <footer>&copy;Poli 2003</footer>
-    
-    
+
+    <script src="js/arquivo.js"></script>
 </body>
 </html>
