@@ -8,6 +8,7 @@ function verificar(){
     var res= document.querySelector('article#resultado');
     var genero= document.getElementsByName('sexo');
     var img = document.getElementById('foto')
+    var caixa= document.getElementById('caixa')
    
     var idade= anoAtual-anoNasc
 
@@ -16,6 +17,10 @@ function verificar(){
         res.innerHTML='Ano de nascimento <strong>INVÁLIDO</strong>.<br>Verifique se você preencheu os dados corretamente.'
     //masculino
     }else if(genero[0].checked){
+        document.body.style.background='#057e95'
+        document.body.style.color= 'white'
+        caixa.style.color= 'black'
+        
         if(idade>=4 && idade<=13){
             genero= 'garotinho'
         }else if(idade>=14 && idade<=19){
@@ -30,6 +35,10 @@ function verificar(){
         res.innerHTML=`Você é um ${genero} de ${idade} anos`
     //feminino
     }else{
+        document.body.style.background= '#970e6f'
+        document.body.style.color= 'white'
+        caixa.style.color= 'black'
+
         if (idade<4){
             genero= 'bebê'
         }else if(idade>=4 && idade<=13){
@@ -44,7 +53,8 @@ function verificar(){
         res.innerHTML=`Você é uma ${genero} de ${idade} anos`
         
     }
-    
+    res.style.textAlign= 'center'
+    res.style.paddingRight= '3.5em'
     
     
 
