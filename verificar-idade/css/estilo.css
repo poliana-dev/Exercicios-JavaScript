@@ -5,11 +5,12 @@ body{
     background-color: beige;
 }
 
-#caixa,#resposta{
-    text-align: justify;
+#resultado{
+    padding-top: 1em;
 }
 
 #caixa{
+    text-align: justify;
     background-color: white;
     width: 500px;
     height: 400px;
@@ -17,6 +18,16 @@ body{
     padding-top: 2em;
     padding-left: 2em;
     margin:auto;
+}
+
+#anoNasc{
+    width: 4em;
+}
+
+.botao{
+    background-color: black;
+    border-radius: 10%;
+    color: white;
 }
 footer{
     padding-top: 1em;
