@@ -16,15 +16,16 @@
     </header>
     <section id="caixa">
         <article>
-        <p>Informe o ano que você nasceu: <input type="number" name="ano" id="anoNasc"></p>
+        <p>Informe o ano que você nasceu: <input type="number" name="ano" id="anoNasc" required></p>
         <p>
-            Sexo: <input type="radio" name="radSex" value="Masculino" id="m" required checked> Masculino
-            <input type="radio" name="radSex" value="Feminino" id="f" required> Feminino
+            Sexo: <input type="radio" name="sexo" value="Masculino" id="m" checked> Masculino
+            <input type="radio" name="sexo" value="Feminino" id="f" > Feminino
         </p>
-        <input type="button" value="verificar" onclick="verificar()">
+        <input type="button" value="verificar" class="botao" onclick="verificar()" >
         </article>
         <article id="resultado">
             <p>Preencha para obter o resultado..</p>
+            <img src="" id="foto">
     
         </article>   
     </section>
